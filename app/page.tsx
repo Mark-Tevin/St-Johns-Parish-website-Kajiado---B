@@ -88,7 +88,7 @@ export default function HomePage() {
                 src={heroImages[currentImageIndex].src || "/placeholder.svg"}
                 alt={heroImages[currentImageIndex].alt}
                 fill
-                priority
+                priority={currentImageIndex === 0}
                 className="object-cover object-center"
                 sizes="100vw"
                 style={{ objectPosition: "center 20%" }} // This will show more of the top portion

@@ -133,6 +133,17 @@ export function Header() {
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
+                <Link href="/sacraments" legacyBehavior passHref>
+                  <NavigationMenuLink
+                    className={`text-sm font-medium transition-colors hover:text-sky-600 dark:hover:text-sky-400 ${
+                      isActive("/sacraments") ? "text-sky-600 dark:text-sky-400 font-semibold" : "text-sky-800 dark:text-gray-300"
+                    }`}
+                  >
+                    Sacraments
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
                 <NavigationMenuTrigger className="text-sm font-medium transition-colors hover:text-sky-600 dark:hover:text-sky-400 text-sky-800 dark:text-gray-300 data-[state=open]:text-sky-600 dark:data-[state=open]:text-sky-400">
                   Resources
                 </NavigationMenuTrigger>
@@ -185,17 +196,6 @@ export function Header() {
                     </li>
                   </ul>
                 </NavigationMenuContent>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <Link href="/daily-readings" legacyBehavior passHref>
-                  <NavigationMenuLink
-                    className={`text-sm font-medium transition-colors hover:text-sky-600 dark:hover:text-sky-400 ${
-                      isActive("/daily-readings") ? "text-sky-600 dark:text-sky-400 font-semibold" : "text-sky-800 dark:text-gray-300"
-                    }`}
-                  >
-                    Daily Readings
-                  </NavigationMenuLink>
-                </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <Link href="/contact" legacyBehavior passHref>
@@ -261,6 +261,7 @@ export function Header() {
                     { href: "/church-groups", label: "Church Groups" },
                     { href: "/outstations", label: "Outstations" },
                     { href: "/programs", label: "Programs" },
+                  { href: "/sacraments", label: "Sacraments" },
                     {
                       href: "/resources",
                       label: "Resources",
@@ -270,7 +271,6 @@ export function Header() {
                         { href: "/resources#gallery", label: "Gallery" },
                       ],
                     },
-                    { href: "/daily-readings", label: "Daily Readings" },
                     { href: "/contact", label: "Contact" },
                   ].map((item) => (
                     <div key={item.href}>
