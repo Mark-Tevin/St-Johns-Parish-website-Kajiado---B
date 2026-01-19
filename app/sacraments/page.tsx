@@ -104,8 +104,8 @@ const officeDetails = [
 export default function SacramentsPage() {
   return (
     <div className="min-h-screen bg-sky-50/40 dark:bg-gray-900">
-      <section className="bg-gradient-to-br from-sky-700 via-sky-600 to-sky-500 text-white py-10 md:py-14">
-        <div className="container px-4 md:px-6">
+      <section className="bg-gradient-to-br from-sky-700 via-sky-600 to-sky-500 text-white py-8 md:py-10">
+        <div className="container px-4 md:px-6 max-w-5xl">
           <div className="max-w-4xl space-y-4">
             <div className="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-2 text-sm font-medium backdrop-blur-sm">
               <span className="h-2 w-2 rounded-full bg-white" />
@@ -127,7 +127,7 @@ export default function SacramentsPage() {
                 Parish community support
               </Badge>
             </div>
-            <div className="flex flex-wrap gap-2 pt-3">
+            <div className="flex flex-wrap gap-2 pt-2">
               <Button asChild className="bg-white text-sky-700 hover:bg-sky-50">
                 <Link href="/contact">Start a conversation</Link>
               </Button>

@@ -33,21 +33,26 @@ export default function OutstationsPage() {
   return (
     <div className="min-h-screen bg-sky-50/30 dark:bg-gray-900">
       {/* Header Section */}
-      <LazySection className="py-16 md:py-24 bg-gradient-to-br from-sky-500 to-sky-600 text-white">
-        <div className="container">
+      <LazySection className="relative overflow-hidden py-16 md:py-24 bg-gradient-to-br from-white via-sky-50 to-emerald-50 dark:from-gray-900 dark:via-gray-900 dark:to-sky-950">
+        <div className="absolute inset-0 pointer-events-none opacity-30">
+          <div className="absolute -top-24 -left-10 h-72 w-72 rounded-full bg-sky-300 blur-3xl" />
+          <div className="absolute -bottom-16 right-0 h-64 w-64 rounded-full bg-emerald-300 blur-3xl" />
+        </div>
+        <div className="container relative">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             className="text-center max-w-3xl mx-auto"
           >
-            <div className="inline-block rounded-md bg-white/20 px-4 py-2 text-sm text-white font-medium mb-4">
+            <div className="inline-flex items-center gap-2 rounded-full border border-sky-100/70 bg-white/90 px-4 py-2 text-sm font-semibold text-sky-700 shadow-sm backdrop-blur-sm dark:border-sky-800 dark:bg-gray-900/70 dark:text-sky-200">
               Our Community
             </div>
-            <h1 className="font-serif text-4xl md:text-5xl font-bold text-white mb-4">
+            <h1 className="font-serif text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mt-5">
               Outstation Churches
             </h1>
-            <p className="text-lg text-white/90 leading-relaxed">
+            <div className="mx-auto mt-4 mb-5 h-1 w-24 rounded-full bg-gradient-to-r from-sky-500 via-emerald-400 to-sky-500" />
+            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
               St. John's Parish Kajiado extends its ministry to {outstationChurches.length} outstation churches,
               serving communities across the region with faith, hope, and love.
             </p>
