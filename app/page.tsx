@@ -180,7 +180,7 @@ export default function HomePage() {
         </motion.div>
       </section>
 
-      {/* Welcome Message Section */}
+      {/* Church History Spotlight */}
       <LazySection className="py-16 md:py-24 bg-white dark:bg-gray-900">
         <div className="container">
           <div className="grid gap-12 md:grid-cols-2 items-center">
@@ -191,19 +191,19 @@ export default function HomePage() {
               className="space-y-6"
             >
               <div className="inline-block rounded-md bg-sky-50 px-4 py-2 text-sm text-sky-500 font-medium shadow-sm">
-                Welcome Message
+                Church History
               </div>
               <h2 className="font-serif text-3xl font-bold tracking-tight sm:text-4xl text-gray-900 dark:text-white">
-                A Message from Our Parish Priest
+                Discover the Story of St. John&apos;s Parish
               </h2>
               <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
                 <p>
-                  Dear brothers and sisters in Christ, welcome to St. John's Parish Kajiado. Our parish is a vibrant
-                  Catholic community dedicated to spreading the Gospel and serving God's people.
+                  From the first Masses held along the railway line in 1918 to the vibrant community we are today, our
+                  parish history is a testimony of perseverance, faith, and service.
                 </p>
                 <p>
-                  Whether you're a long-time parishioner or new to our community, we invite you to join us in worship,
-                  fellowship, and service. Here, you'll find a spiritual home where faith grows and community thrives.
+                  Walk through the milestones, meet the priests and families who built St. John&apos;s, and see how the
+                  church became a home for thousands across Kajiado.
                 </p>
               </div>
               <Button
@@ -211,8 +211,8 @@ export default function HomePage() {
                 className="group relative overflow-hidden rounded-md px-6 py-2 text-sky-500 dark:text-sky-400 border-sky-500 dark:border-sky-400 hover:bg-sky-50 dark:hover:bg-sky-900/20"
                 asChild
               >
-                <Link href="/parish-office#parish-priest-message">
-                  <span className="relative z-10">Read More</span>
+                <Link href="/about#history">
+                  <span className="relative z-10">Read Our History</span>
                 </Link>
               </Button>
             </motion.div>
@@ -224,7 +224,7 @@ export default function HomePage() {
             >
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/clergyandbishop.jpg-hfQJ3LHcJBzrV22s4Ds2hRmfJnbi6c.jpeg"
-                alt="Fr. Patrick Nkaai (on the left) with the Bishop and fellow clergy member in red and gold vestments during a special celebration"
+                alt="Historic moment with parish clergy and Bishop during a special celebration"
                 fill
                 className="object-cover transition-transform duration-300 hover:scale-105"
                 style={{ objectPosition: "center 15%" }} // Show more of the top to capture the bishop's cap
@@ -233,14 +233,14 @@ export default function HomePage() {
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-black/40"></div>
               <div className="absolute bottom-4 left-4 right-4 text-white">
                 <h3 className="font-serif text-xl font-semibold">
-                  Fr. Patrick Nkaai <span className="text-sm font-normal">(on the left)</span>
+                  A Century of Faithful Service
                 </h3>
                 <p className="text-sm text-white/80">
-                  Parish Priest, pictured with Bishop during a special celebration
+                  See how our parish grew through dedicated clergy, families, and friends
                 </p>
               </div>
               <div className="absolute top-4 left-4 px-3 py-1.5 bg-sky-500/70 backdrop-blur-sm rounded-full">
-                <span className="text-xs font-medium text-white">Parish Priest</span>
+                <span className="text-xs font-medium text-white">Our History</span>
               </div>
             </motion.div>
           </div>
